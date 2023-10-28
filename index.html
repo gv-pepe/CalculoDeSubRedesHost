@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
+</head>
+<body>
+  
+  <div id="box">
+    <input type="text" id="ip" name="ip" placeholder="Ip base" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" required>
+  <input type="number" id="n" name="n" placeholder="Valor de n" required>
+  <button onclick="calcularSiguienteIP()" id="sig">Siguientes DI</button><br><br>
+  <label for="">En caso de que no conozcas el valor de n: </label><br>
+  <input type="text" name="" id="host" placeholder="Host">
+  <button onclick="calcularN()">Calcula n</button>
+  </div>
+
+
+  <br><br>
+  <div>
+    <ul>
+      <li><div class="circulos" id="verde"></div>Direccion de identificacion</li>
+      <li> <div class="circulos" id="naranja"></div>Rango valido</li>
+      <li><div class="circulos" id="rosa"></div>Direccion broadcast</li>
+    </ul>
+  </div>
+  
+  <table id="ip-table">
+    <tr>
+      <th>IP Decimal</th>
+      <th>IP Binario</th>
+      <th>Mascara</th>
+      <th>Wilcard</th>
+    </tr>
+  </table>
+<footer>
+  
+</footer>
+</body>
+</html>
